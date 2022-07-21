@@ -100,7 +100,7 @@ public class Solution {
         inputList.add("address.geo.lat");
         inputList.add("IN");
         inputList.add("29.4572,-31.8129");
-        List<Integer> result = Result.apiResponseParser(inputList, inputList.size());
+        List<Integer> result = ResultV2.apiResponseParser(inputList, inputList.size());
 
         System.out.println(result);
 

@@ -6,13 +6,12 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.*;
 import java.net.*;
-import java.util.concurrent.CompletableFuture;
 
 import com.google.gson.*;
 import static java.util.stream.Collectors.joining;
 
 
-class Result {
+class ResultV2 {
 
     /*
      * Complete the 'apiResponseParser' function below.
@@ -102,7 +101,7 @@ public class SolutionV2 {
         inputList.add("address.geo.lat");
         inputList.add("IN");
         inputList.add("29.4572,-31.8129");
-        List<Integer> result = Result.apiResponseParser(inputList, inputList.size());
+        List<Integer> result = ResultV2.apiResponseParser(inputList, inputList.size());
 
         System.out.println(result);
 
